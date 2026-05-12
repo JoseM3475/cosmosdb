@@ -13,4 +13,9 @@ az group create --name CursoCosmosDB --location eastus2
 
 az group delete --name CursoCosmosDB --yes --no-wait
 
-daniela
+Pasos para crear base de datos en cosmos db
+1 Crear la cuenta de Cosmos DB:
+az cosmosdb create --name <nombre_cuenta> --resource-group <nombre_grupo_recursos>
+
+2 Crear la base de datos:
+az cosmosdb sql database create --account-name <nombre_cuenta> --resource-group <nombre_grupo_recursos> --name <nombre_base_datos>
